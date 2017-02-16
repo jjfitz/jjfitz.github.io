@@ -12,8 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   I am Jason Fitzgerald. I am a Software Engineering student at BYU-I. 
   I love coding, hiking, and traveling. You can usually find me working on 
   a new program, or planning out my next trip. I hope that you enjoy my site!
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://jjfitz.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jjfitz.github.io/jekyll" # the base hostname & protocol for your site
 twitter_username: jjfitz27
 github_username:  jjfitz
 
