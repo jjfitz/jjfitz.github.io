@@ -82,11 +82,22 @@
       <div class="container">
         <h1 class="text-center">Scavenger Hunt!</h1>
         <p>Good Morning Erin!</p>
-        <p>I hope you are willing to go on a scavenger hunt! If you accept this invitation, please go to the place where we first met :)</p>
-        <p>Address: University Parkway Center, 35 E University Pkwy, Provo, UT 84604</p>
+        <p>I hope you are willing to go on a scavenger hunt! If at anytime you have any questions about the instructions, please let me know. Also, let me know when you start. If you accept this invitation, please go to the place where we first met :) There should be a note addressed to you on as you walk in from the east doors. it should be on a desk. Enter the password, when you find it, to continue :)</p>
         <script type="text/javascript">
-        function toggle_visibility(id) {
-       var e = document.getElementById(id);
+        function validateForm() {
+            var x = document.getElementById("fname").value;
+            if (x != "iloveu") {
+                alert("This is not the right password");
+                return false;
+            } else {
+              document.getElementById("demo").innerHTML = "<p>You did it!" + "</p>";
+            }
+        } 
+        document.getElementById('demo1').style.display = 'none'
+        document.getElementById('demo2').style.display = 'none'
+        document.getElementById('demo3').style.display = 'none'
+        function toggle_visibility1() {
+       var e = document.getElementById("demo1");
        var x = document.getElementById("fname").value;
        if (x != "iloveu") {
         alert("This is not the right password");
@@ -98,25 +109,50 @@
             e.style.display = 'block';
        }
      }
-        function validateForm() {
-            var x = document.getElementById("fname").value;
-            if (x != "iloveu") {
-                alert("This is not the right password");
+     function toggle_visibility2() {
+       var e = document.getElementById("demo2");
+       var x = document.getElementById("fnam").value;
+       if (x != "eternity") {
+        alert("This is not the right password");
                 return false;
-            } else {
-              document.getElementById("demo").innerHTML = "<p>You did it!" + "</p>";
-            }
-        } 
+       } else {
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+       }
+     }
+     function toggle_visibility3() {
+       var e = document.getElementById("demo3");
+       var x = document.getElementById("fna").value;
+       if (x != "erinfitzgerald") {
+        alert("This is not the right password");
+                return false;
+       } else {
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+       }
+     }
         </script>
         Password: <input type="text" id="fname">
-        <button onclick="toggle_visibility('demo1')">Submit</button>
+        <button onclick="toggle_visibility1()">Submit</button>
         <p id="demo"></p>
-        <p id="demo1">Will this work?</p>
+        <div id="demo1" style="display: none">
+          <p>I'm glad you found it! Now please go to where we had our first date :) You should see another note addressed to you on the right side of the building by a bench as you are walking towards the doors.</p>
+          Password: <input type="text" id="fnam">
+        <button onclick="toggle_visibility2()">Submit</button>
+        </div>
+        <div id="demo2" style="display: none">
+          <p>Hooray! You are here! One more stop alone (sorry) and then we will be together again! Please go to where we first held hands :) You should see another note addressed to you by the Cinemark theater entrance.</p>
+          Password: <input type="text" id="fna">
+        <button onclick="toggle_visibility3()">Submit</button>
+        </div>
+        <div id="demo3" style="display: none">
+          <p>That's it! Now come find me at the back of the old Provo temple :) Let me know when you are on your way! I'll be watching for you ;)</p>
+        </div>
       </div>
-    </div>
-
-    <div class="container">
-      <h1 class="page-header">Things to Scavenge</h1>
     </div>
     </div>
     </div>
