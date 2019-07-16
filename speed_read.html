@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speed Reading</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <script type="text/javascript">
+
+      // https://stackoverflow.com/questions/33682895/can-i-force-the-browser-to-render-dom-changes-during-javascript-execution
+
+      function sleep(milliseconds) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+          if ((new Date().getTime() - start) > milliseconds){
+            break;
+          }
+        }
+      }
+
+      function count_word() {
+        var x = document.getElementById("speed_text");
+        var split_word = x.value.split(" ", 1000);
+        var ww = document.getElementById("totwords");
+        ww.innerHTML = "There are: " + split_word.length + " words in this text";
+        var wpm = document.getElementById("wpm").value;
+        var minu = split_word.length / wpm; 
+        document.getElementById("read_time").innerHTML = "Minutes it will take to finish: " + minu;
+      }
+
+      // const input = document.querySelector('speed_text');
+      // const log = document.getElementById('totwords');
+
+      // input.addEventListener('change', updateValue);
+
+      // function updateValue(e) {
+      //   log.textContent = e.srcElement.value;
+      // }
+
+      function speed_read() {
+        var w = document.getElementById("speed_text").value;
+        var wpm = document.getElementById("wpm").value;
+        var numword = document.getElementById("numwords").value;
+        var el = document.getElementById("speed_word");
+        var split_words = w.split(" ", 1000);
+        var speed = (60000 / wpm)*numword;
+
+        if (numword == 1) {
+          for (var i = 0; i <= split_words.length - 1; i++) {
+            setTimeout(function(i) {
+                el.innerHTML = split_words[i];
+            }, speed * i, i);
+          }
+        }
+        if (numword == 2) {
+          for (var i = 0; i <= split_words.length - 1; i+=2) {
+            setTimeout(function(i) {
+                el.innerHTML = split_words[i] + " " + split_words[i+1];
+            }, speed * i, i);
+          }
+        }
+        if (numword == 3) {
+          for (var i = 0; i <= split_words.length - 1; i+=3) {
+            setTimeout(function(i) {
+                el.innerHTML = split_words[i] + " " + split_words[i+1] + " " + split_words[i+2];
+            }, speed * i, i);
+          }
+        }
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="assignments.html">Web Projects</a></li>
+                <li><a href="index.html">Personal Website</a></li>
+                <li><a href="https://nameless-woodland-94520.herokuapp.com/online-store.php">Online Store</a></li>
+                <li><a href="https://nameless-woodland-94520.herokuapp.com/Budgets/login.php">Budgets</a></li>
+                <li>
+          <a href="online-scavenger-hunt.html">Long Distance Scavenger Hunt</a>
+        </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Analysis<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="analysis.html">Data Analysis Home</a></li>
+                <li><a href="analysis/2_Case_Study.html">Wealth and Life Expectancy (Gapminder)</a></li>
+                <li><a href="analysis/Case_Study_3.html">Gun Deaths</a></li>
+                <li><a href="analysis/Case_Study4.html">The Rise In Human Heights</a></li>
+                <li><a href="analysis/Case_Study06.html">Words Between References of Jesus</a></li>
+                <li><a href="analysis/Case_Study07.html">IBC Businesses</a></li>
+                <li><a href="analysis/Case_Study08.html">Stocks: Interacting With Time</a></li>
+                <li><a href="analysis/Case_Study10.html">Building The Past</a></li>
+                <li><a href="analysis/job_search.html">Data Science vs. Business Intelligence</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="projects.html">Projects Home</a></li>
+                <li><a href="projects/job_search.html">Data Science vs. Business Intelligence</a></li>
+                <li><a href="projects/World_Cup_Analysis.html">Predicting World Cup Wins with Sentiment Analysis</a></li>
+                <li><a href="projects/HS_map.html">Henry Schein Map</a></li>
+                <li><a href="projects/Article.html">Do CEO's Have a Deeper Voice?</a></li>
+                <li><a href="projects/Lyric_Sentiments.html">Song Sentiments App</a></li>
+              </ul>
+            </li>
+            <!-- <li>
+              <a href="online-scavenger-hunt.html" role="button">Online Scavenger Hunt</a>
+            </li> -->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <h1 class="page-header">Introduction</h1>
+      <p class="lead">Paste in some text that you want to read quickly. Hit the start button to start reading.</p>
+      <textarea onchange="count_word();" id="speed_text" placeholder="Paste in here..." class="center-block form-control">This is just some test text. I am wanting to see if what I have works.</textarea>
+      WPM: <input onchange="count_word();" type="text" id="wpm", value="300"><br/>
+      Words to see at a time: <input onchange="count_word();" type="text" id="numwords", value="1"><br/>
+      <p id="totwords"></p>
+      <p id="read_time"></p>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="text-center" id="speed_word">Hello, I'm Jason Fitzgerald</h1>
+        <input id="clickMe" type="button" value="Start Reading" onclick="speed_read();" class="center-block" />
+      </div>
+    </div>
+
+
+    <!-- <blockquote class="blockquote">
+      <p>"Imagination is more important than knowledge."</p>
+      <footer>Albert Einstein</footer>
+    </blockquote> -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>
