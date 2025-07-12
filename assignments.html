@@ -11,68 +11,19 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Home</a>
-        </div>
+    <div id="navbar-placeholder"></div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Projects<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="assignments.html">Web Projects</a></li>
-                <li><a href="index.html">Personal Website</a></li>
-                <li><a href="https://nameless-woodland-94520.herokuapp.com/online-store.php">Online Store</a></li>
-                <li><a href="https://nameless-woodland-94520.herokuapp.com/Budgets/login.php">Budgets</a></li>
-                <li>
-          <a href="online-scavenger-hunt.html">Long Distance Scavenger Hunt</a>
-        </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Analysis<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="analysis.html">Data Analysis Home</a></li>
-                <li><a href="analysis/2_Case_Study.html">Wealth and Life Expectancy (Gapminder)</a></li>
-                <li><a href="analysis/Case_Study_3.html">Gun Deaths</a></li>
-                <li><a href="analysis/Case_Study4.html">The Rise In Human Heights</a></li>
-                <li><a href="analysis/Case_Study06.html">Words Between References of Jesus</a></li>
-                <li><a href="analysis/Case_Study07.html">IBC Businesses</a></li>
-                <li><a href="analysis/Case_Study08.html">Stocks: Interacting With Time</a></li>
-                <li><a href="analysis/Case_Study10.html">Building The Past</a></li>
-                <li><a href="analysis/job_search.html">Data Science vs. Business Intelligence</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="projects.html">Projects Home</a></li>
-                <li><a href="projects/job_search.html">Data Science vs. Business Intelligence</a></li>
-                <li><a href="projects/World_Cup_Analysis.html">Predicting World Cup Wins with Sentiment Analysis</a></li>
-                <li><a href="projects/HS_map.html">Henry Schein Map</a></li>
-                <li><a href="projects/Article.html">Do CEO's Have a Deeper Voice?</a></li>
-                <li><a href="projects/Lyric_Sentiments.html">Song Sentiments App</a></li>
-                <li><a href="projects/Journal_Sentiments.html">Journal Sentiments</a></li>
-                <li><a href="projects/speed_read.html">Speed Reading Website</a></li>
-                <li><a href="projects/Genealogy.html">Reading GEDCOM Files</a></li>
-              </ul>
-            </li>
-            <!-- <li>
-              <a href="online-scavenger-hunt.html" role="button">Online Scavenger Hunt</a>
-            </li> -->
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+    <script>
+        // Fetch and insert navbar.html
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading navigation bar:', error);
+            });
+    </script>
 
     <div class="container">
     <h1 class="page-header">Web Projects</h1>
@@ -100,5 +51,40 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/bootstrap.min.js"></script>
+
+    <footer id="footer-placeholder">place</footer>
+
+    <script>
+      // Fetch and insert footer.html
+      fetch('/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          const footerContainer = document.getElementById('footer-placeholder');
+          footerContainer.innerHTML = data;
+      
+          // Find all script tags in the inserted HTML
+          const scripts = footerContainer.querySelectorAll('script');
+      
+          scripts.forEach(oldScript => {
+            const newScript = document.createElement('script');
+      
+            // Copy attributes
+            [...oldScript.attributes].forEach(attr => {
+              newScript.setAttribute(attr.name, attr.value);
+            });
+      
+            // Copy content (if inline)
+            if (oldScript.textContent) {
+              newScript.textContent = oldScript.textContent;
+            }
+      
+            // Replace the old script with the new one (so it executes)
+            oldScript.parentNode.replaceChild(newScript, oldScript);
+          });
+        })
+        .catch(error => {
+          console.error('Error loading footer:', error);
+        });
+      </script>
   </body>
 </html>

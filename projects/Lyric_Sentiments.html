@@ -101,7 +101,19 @@ summary {
 }
 </style>
 
+<div id="navbar-placeholder"></div>
 
+    <script>
+        // Fetch and insert navbar.html
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading navigation bar:', error);
+            });
+    </script>
 
 <div class="container-fluid main-container">
 
@@ -230,6 +242,41 @@ $(document).ready(function () {
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
+
+<footer id="footer-placeholder">place</footer>
+
+    <script>
+      // Fetch and insert footer.html
+      fetch('/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          const footerContainer = document.getElementById('footer-placeholder');
+          footerContainer.innerHTML = data;
+      
+          // Find all script tags in the inserted HTML
+          const scripts = footerContainer.querySelectorAll('script');
+      
+          scripts.forEach(oldScript => {
+            const newScript = document.createElement('script');
+      
+            // Copy attributes
+            [...oldScript.attributes].forEach(attr => {
+              newScript.setAttribute(attr.name, attr.value);
+            });
+      
+            // Copy content (if inline)
+            if (oldScript.textContent) {
+              newScript.textContent = oldScript.textContent;
+            }
+      
+            // Replace the old script with the new one (so it executes)
+            oldScript.parentNode.replaceChild(newScript, oldScript);
+          });
+        })
+        .catch(error => {
+          console.error('Error loading footer:', error);
+        });
+      </script>
 
 </body>
 </html>
