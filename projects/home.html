@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignments</title>
+
+    <!-- Bootstrap -->
+    <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <script>
+        // Fetch and insert navbar.html
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading navigation bar:', error);
+            });
+    </script>
+
+    <div class="container">
+    <h1 class="page-header">Projects</h1>
+	<ul class="list-unstyled">
+      <li>
+        <a href="projects/job_search.html">Data Science vs. Business Intelligence</a>
+        <p>In this project, I srapped job postings off of Dice.com and looked at the most common requested skills.</p>
+      </li>
+      <li>
+        <a href="projects/World_Cup_Analysis.html">Predicting World Cup Wins with Sentiment Analysis</a>
+        <p>Can you accurately predict if a team will win based on sentiments on Twitter?</p>
+      </li>
+      <li>
+        <a href="projects/HS_map.html">Henry Schein Map</a>
+        <p>This is a map that we built for Henry Schein. It gives summary statistics on customers depending on the boundaries on the map.</p>
+      </li>
+      <li>
+        <a href="projects/Article.html">Do CEO's Have a Deeper Voice?</a>
+        <p>For my senior project, I tried to see if there where any differences between a CEO's voice compared to the average male. </p>
+      </li>
+      <li>
+        <a href="projects/Lyric_Sentiments.html">Song Sentiments App</a>
+        <p>This is a fun little shiny app that does some basic sentiment analysis on a song. In the future, I am hoping to develop it out more for albums and artists.</p>
+      </li>
+      <li>
+        <a href="projects/Journal_Sentiments.html">Journal Sentiments</a>
+        <p>I decided to do a little bit of sentiment analysis on my personal journal. It was fun taking a look at my journal in summary.</p>
+      </li>
+      <li>
+      <li>
+        <a href="projects/speed_read.html">Speed Reading Website</a>
+        <p>I wanted to take a stab of what it was like to try and build my own speed reading app.</p>
+      </li>
+      <li>
+        <a href="projects/Genealogy.html">Reading GEDCOM Files</a>
+        <p>This is a fun little shiny app that does some basic sentiment analysis on a song. In the future, I am hoping to develop it out more for albums and artists.</p>
+      </li>
+	</ul>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
