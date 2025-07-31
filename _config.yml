@@ -62,7 +62,7 @@ analytics:
   google:
     id: # fill in your Google Analytics ID
   goatcounter:
-    id: https://jjfitz.goatcounter.com/count # fill in your GoatCounter ID
+    id: jjfitz # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -125,11 +125,11 @@ comments:
     repo_id: MDEwOlJlcG9zaXRvcnk2NTQxMjE5Nw==
     category: Announcements
     category_id: DIC_kwDOA-YcZc4CsqEJ
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    # mapping: # optional, default to 'pathname'
+    # strict: # optional, default to '0'
+    # input_position: # optional, default to 'bottom'
+    # lang: # optional, default to the value of `site.lang`
+    # reactions_enabled: # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
