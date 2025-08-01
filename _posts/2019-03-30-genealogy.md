@@ -1,7 +1,7 @@
 ---
 title: Genealogy
 description: Using read_gedcom to read gedcom files with R from FamilySearch or Ancestry.
-author: jason
+author: jjfitz
 date: 2019-09-26 11:33:00 +0800
 categories: [Genealogy, R]
 tags: [gedcom, R, family_history]
