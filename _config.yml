@@ -59,20 +59,20 @@ webmaster_verifications:
 
 # Web Analytics Settings
 analytics:
-  google:
-    id: # fill in your Google Analytics ID
+  # google:
+  #   id: # fill in your Google Analytics ID
   goatcounter:
     id: jjfitz # fill in your GoatCounter ID
-  umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
-  matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
-  cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
-  fathom:
-    id: # fill in your Fathom Site ID
+  # umami:
+  #   id: # fill in your Umami ID
+  #   domain: # fill in your Umami domain
+  # matomo:
+  #   id: # fill in your Matomo ID
+  #   domain: # fill in your Matomo domain
+  # cloudflare:
+  #   id: # fill in your Cloudflare Web Analytics token
+  # fathom:
+  #   id: # fill in your Fathom Site ID
 
 # Page views settings
 pageviews:
@@ -113,7 +113,7 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+  provider: giscus # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
