@@ -1,0 +1,105 @@
+---
+title: Genealogy
+description: Using read_gedcom to read gedcom files with R from FamilySearch or Ancestry.
+author: jason
+date: 2019-09-26 11:33:00 +0800
+categories: [Genealogy, R]
+tags: [gedcom, R, family_history]
+pin: true
+math: true
+---
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="text-center">Dating Questions!</h1>
+        <p>Just press the button below to generate 3 questions to ask each other. If you want to see the whole list, look at the selections below. Have fun!</p>
+        <script type="text/javascript">
+        var min = 1;
+        var max = 44;
+        var tmp;
+        function getRndInteger(min, max) {
+          tmp1 = Math.floor(Math.random() * (max - min + 1) ) + min;
+          document.getElementById("demo").innerHTML = "<p>1. " + document.getElementById(tmp1).innerHTML + "</p>";
+          tmp2 = Math.floor(Math.random() * (max - min + 1) ) + min;
+          while(tmp1 == tmp2) {
+            tmp2 = Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "<p>2. " + document.getElementById(tmp2).innerHTML + "</p>";
+          tmp3 = Math.floor(Math.random() * (max - min + 1) ) + min;
+          while(tmp1 == tmp3 || tmp2 == tmp3) {
+            tmp3 = Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "<p>3. " + document.getElementById(tmp3).innerHTML + "</p>";
+        }
+
+        // function rnd() {
+        //   document.getElementById("demo").innerHTML = Math.floor(Math.random() * (5 - 3 + 1) ) + 0;
+        // }
+        </script>
+        <button type="button" id="scavenge" onclick="getRndInteger(min, max)">Generate Questions</button>
+        <p></p>
+        <p id="demo"></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="page-header">Questions</h2>
+      <ul>
+        <li id="1">The last song you listened to</li>
+        <li id="2">A free thing on Craiglist that you like</li>
+        <li id="3">The next thing you are wanting to buy</li>
+        <li id="4">Strangest music video</li>
+        <li id="5">Scripture that stuck out to you</li>
+        <li id="6">What makes you laugh?</li>
+        <li id="7">Who are the most important people in your life?</li>
+        <li id="8">Where is ‘home’?</li>
+        <li id="9">Do you read reviews, or just go with your gut?</li>
+        <li id="10">Do you have a dream you’re pursuing?</li>
+        <li id="11">What do your Saturdays usually look like?</li>
+        <li id="12">Where did you grow up, and what was your family like?</li>
+        <li id="13">What’s your big passion?</li>
+        <li id="14">What’s the most interesting job you’ve ever had?</li>
+        <li id="15">Do you have a special place you like to visit regularly?</li>
+        <li id="16">What’s the best meal you’ve ever had?</li>
+        <li id="17">In which television show’s world would you most want to live?</li>
+        <li id="18">What’s on your bucket list?</li>
+        <li id="19">What’s your most valuable possession?</li>
+        <li id="20">Who’s the most fascinating person you know?</li>
+        <li id="21">What’s the hardest thing you’ve ever done? The scariest?</li>
+        <li id="22">What are your pet peeves?</li>
+        <li id="23">What’s the best present you’ve ever given someone?</li>
+        <li id="24">What’s the best present you ever received?</li>
+        <li id="25">What’s your favorite type of music?</li>
+        <li id="26">What are 5 characteristics that make up a positive person?</li>
+        <li id="27">What do you want to do when you retire?</li>
+        <li id="28">What’s the worst injury you ever sustained?</li>
+        <li id="29">What amazing adventures have you been on?</li>
+        <li id="30">What pets have you had?</li>
+        <li id="31">What are you kind of obsessed with these days?</li>
+        <li id="32">What’s your favorite international food?</li>
+        <li id="33">Are you a morning person or a night owl?</li>
+        <li id="34">What would your perfect vacation look like?</li>
+        <li id="35">Among your friends, what are you best known for?</li>
+        <li id="36">What are some accomplishments that you are really proud of?</li>
+        <li id="37">What are some things everyone should try at least once?</li>
+        <li id="38">What fad did you never really understand?</li>
+        <li id="39">What’s the best thing that has happened to you this month?</li>
+        <li id="40">What would your perfect morning be like?</li>
+        <li id="41">What are you always game for?</li>
+        <li id="42">What’s your favorite app on your phone?</li>
+        <li id="43">Who is the kindest person you know?</li>
+        <li id="44">What’s your favorite piece of furniture you’ve ever owned?</li>
+      </ul>
+    </div>
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--https://conversationstartersworld.com/first-date-questions/ #38
+    https://www.zoosk.com/date-mix/dating-advice/first-date-tips/dating-questions-ask-first-date/ 
+    chess game - https://lichess.org/-->
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+    
