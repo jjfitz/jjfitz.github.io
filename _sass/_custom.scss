@@ -1,0 +1,17 @@
+.single-column-cv {
+  .main {
+    width: 100%; /* Make the main content area full width */
+  }
+  .sidebar {
+    display: none; /* Hide the sidebar */
+  }
+  .post {
+    max-width: 800px; /* Adjust the max-width for better readability */
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  h2 {
+    border-bottom: 2px solid #333; /* Adds a line under major sections */
+    padding-bottom: 0.5rem;
+  }
+}
