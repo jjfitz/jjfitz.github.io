@@ -1,3 +1,14 @@
+---
+title: Speed Reading Web App
+description: A web app to help users practice and measure speed reading, featuring word count, reading time estimation, and interactive JavaScript tools.
+author: jason
+date: 2019-09-20 00:34:00 +0800
+categories: [Web App, Reading]
+tags: [speed reading, JavaScript, reading efficiency, web app]
+pin: false
+math: false
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

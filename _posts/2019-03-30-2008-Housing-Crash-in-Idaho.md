@@ -1,11 +1,11 @@
 ---
-title: Genealogy
-description: Using read_gedcom to read gedcom files with R from FamilySearch or Ancestry.
+title: Housing Crash in Idaho
+description: Analysis of the 2008 housing crash and its impact on single family permits in Idaho and the US, using R for data visualization.
 author: jason
-date: 2019-09-26 11:33:00 +0800
-categories: [Genealogy, R]
-tags: [gedcom, R, family_history]
-pin: true
+date: 2019-03-30 00:34:00 +0800
+categories: [Economics, Data Analysis]
+tags: [housing, Idaho, R, data visualization, economics]
+pin: false
 math: true
 ---
 

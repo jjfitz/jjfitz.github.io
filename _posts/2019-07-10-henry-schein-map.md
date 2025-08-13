@@ -1,12 +1,12 @@
 ---
-title: Genealogy
-description: Using read_gedcom to read gedcom files with R from FamilySearch or Ancestry.
+title: Henry Schein Customer Map
+description: Building a leaflet map and statistical summaries for Henry Schein customers using R, geocoding, and a shiny app during an internship project.
 author: jason
-date: 2019-09-26 11:33:00 +0800
-categories: [Genealogy, R]
-tags: [gedcom, R, family_history]
-pin: true
-math: true
+date: 2019-07-10 00:34:00 +0800
+categories: [Mapping, Internship]
+tags: [Henry Schein, leaflet, shiny, geocoding, R]
+pin: false
+math: false
 ---
 
 <div class="container-fluid main-container">

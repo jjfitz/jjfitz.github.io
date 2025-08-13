@@ -1,3 +1,14 @@
+---
+title: Scavenger Hunt Web App
+description: An interactive scavenger hunt game built with Bootstrap and JavaScript, featuring questions, games, and a fun UI.
+author: jason
+date: 2019-08-15 00:34:00 +0800
+categories: [Web App, Games]
+tags: [scavenger hunt, Bootstrap, JavaScript, game]
+pin: false
+math: false
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

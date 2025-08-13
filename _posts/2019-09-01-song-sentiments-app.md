@@ -1,14 +1,13 @@
 ---
-title: Genealogy
-description: Using read_gedcom to read gedcom files with R from FamilySearch or Ancestry.
+title: Song Sentiments App
+description: A shiny app for sentiment analysis of song lyrics, using R and various sentiment libraries to visualize positive and negative words.
 author: jason
-date: 2019-09-26 11:33:00 +0800
-categories: [Genealogy, R]
-tags: [gedcom, R, family_history]
-pin: true
-math: true
+date: 2019-09-01 00:34:00 +0800
+categories: [Music, Sentiment Analysis]
+tags: [song lyrics, sentiment analysis, shiny, R]
+pin: false
+math: false
 ---
-
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Genealogy
-description: Using read_gedcom to read gedcom files with R from FamilySearch or Ancestry.
-author: jason
-date: 2019-09-26 11:33:00 +0800
-categories: [Genealogy, R]
-tags: [gedcom, R, family_history]
-pin: true
+title: Journal Sentiment Analysis
+description: Applying sentiment analysis to personal journal entries using R, including data import, text processing, and visualization.
+author: jjfitz
+date: 2019-08-01 00:34:00 +0800
+categories: [Text Analysis, Sentiment]
+tags: [journal, sentiment analysis, R, text analysis]
+pin: false
 math: true
 ---
 

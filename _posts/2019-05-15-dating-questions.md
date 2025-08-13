@@ -1,12 +1,12 @@
 ---
-title: Genealogy
-description: Using read_gedcom to read gedcom files with R from FamilySearch or Ancestry.
+title: Dating Questions Generator
+description: A fun web app to generate random questions for couples to ask each other, including a full list and interactive JavaScript features.
 author: jason
-date: 2019-09-26 11:33:00 +0800
-categories: [Genealogy, R]
-tags: [gedcom, R, family_history]
-pin: true
-math: true
+date: 2019-05-15 00:34:00 +0800
+categories: [Web App, Relationships]
+tags: [dating, questions, JavaScript, fun, couples]
+pin: false
+math: false
 ---
 
     <div class="jumbotron">

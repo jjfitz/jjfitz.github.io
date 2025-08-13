@@ -1,11 +1,11 @@
 ---
-title: Genealogy
-description: Using read_gedcom to read gedcom files with R from FamilySearch or Ancestry.
+title: Stocks: Interacting with Time
+description: Analyzing the performance of various stocks over time using R, time series data, and financial visualization tools.
 author: jason
-date: 2019-09-26 11:33:00 +0800
-categories: [Genealogy, R]
-tags: [gedcom, R, family_history]
-pin: true
+date: 2019-09-10 00:34:00 +0800
+categories: [Finance, Data Analysis]
+tags: [stocks, R, time series, financial data]
+pin: false
 math: true
 ---
 
