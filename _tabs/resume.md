@@ -11,8 +11,8 @@ class: single-column-cv
 ---
 
 ## 📞 Contact  
-- **Phone:** (208) 932-8938  
-- **Email:** [jason.j.fitzgerald@gmail.com](mailto:jason.j.fitzgerald@gmail.com)  
+<!-- - **Phone:** (208) 932-8938  
+- **Email:** [jason.j.fitzgerald@gmail.com](mailto:jason.j.fitzgerald@gmail.com)   -->
 - **LinkedIn:** [linkedin.com/in/jasonjfitzgerald](https://www.linkedin.com/in/jasonjfitzgerald)  
 - **GitHub:** [github.com/jjfitz](https://github.com/jjfitz)  
 - **Website:** [jjfitz.github.io](https://jjfitz.github.io)
