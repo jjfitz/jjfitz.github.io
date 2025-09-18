@@ -9,6 +9,8 @@ pin: false
 math: false
 ---
 
+[Try the Dating Questions App here](/dating-questions-app/)
+
     <div class="jumbotron">
       <div class="container">
         <h1 class="text-center">Dating Questions!</h1>
