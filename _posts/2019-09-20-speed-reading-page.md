@@ -9,6 +9,8 @@ pin: false
 math: false
 ---
 
+[Try the Speed Reading App here](/speed-reading-app/)
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

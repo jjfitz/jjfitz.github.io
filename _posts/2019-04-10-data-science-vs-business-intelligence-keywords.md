@@ -1,5 +1,5 @@
 ---
-title: Data Science vs Business Intelligence: Job Skills Analysis
+title: Data Science vs Business Intelligence - Job Skills Analysis
 description: Comparing the most common skills and keywords in job postings for Data Science and Business Intelligence using word clouds and text analysis.
 author: jason
 date: 2019-04-10 00:34:00 +0800

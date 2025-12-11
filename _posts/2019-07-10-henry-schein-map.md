@@ -32,12 +32,12 @@ math: false
 <example>
 <p>We could now finally plot the customers on the map! We then had to learn a little bit more about shiny. We found a package that gave a little bit of style to shiny apps called shinydashboard. We started to learn how to make our plots reactive, and changing our graphs to where the map boundaries where. We built more tabs so that Henry Schein would be able to look at their customers that where within the app.</p>
 <p>This was a really fun project to be a part of. I learned more about geocoding and learned a lot of what it takes to make a shiny app.</p>
-</div>
+<!-- </div> -->
 
 
 
 
-</div>
+<!-- </div> -->
 
 <script>
 

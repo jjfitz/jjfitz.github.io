@@ -1,5 +1,5 @@
 ---
-title: Stocks: Interacting with Time
+title: Stocks Interacting with Time
 description: Analyzing the performance of various stocks over time using R, time series data, and financial visualization tools.
 author: jason
 date: 2019-09-10 00:34:00 +0800
@@ -15,7 +15,7 @@ math: true
 <div class="container-fluid main-container">
 
 
-<h1 class="title toc-ignore">Case_Study08</h1>
+<h1 class="title toc-ignore">Interacting With Time</h1>
 
 </div>
 
@@ -90,7 +90,7 @@ port %&gt;%
 
 
 
-</div>
+<!-- </div> -->
 
 <script>
 

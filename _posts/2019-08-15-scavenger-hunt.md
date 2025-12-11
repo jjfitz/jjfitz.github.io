@@ -1,6 +1,6 @@
 ---
 title: Scavenger Hunt Web App
-description: An interactive scavenger hunt game built with Bootstrap and JavaScript, featuring questions, games, and a fun UI.
+description: An interactive scavenger hunt game built with Bootstrap and JavaScript. This is a Scavenger Hunt that I used to propose to my wife.
 author: jason
 date: 2019-08-15 00:34:00 +0800
 categories: [Web App, Games]
@@ -9,7 +9,7 @@ pin: false
 math: false
 ---
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -92,7 +92,7 @@ math: false
     <div class="jumbotron">
       <div class="container">
         <h1 class="text-center">Scavenger Hunt!</h1>
-        <p>Good Morning Erin!</p>
+        <p>Good Morning!</p>
         <p>I hope you are willing to go on a scavenger hunt! If at anytime you have any questions about the instructions, please let me know. Also, let me know when you start. If you accept this invitation, please go to the place where we first met :) There should be a note addressed to you on as you walk in from the east doors. it should be on a desk. Enter the password, when you find it, to continue :)</p>
         <script type="text/javascript">
         function validateForm() {
@@ -136,7 +136,7 @@ math: false
      function toggle_visibility3() {
        var e = document.getElementById("demo3");
        var x = document.getElementById("fna").value;
-       if (x != "erinfitzgerald") {
+       if (x != "fitzgerald") {
         alert("This is not the right password");
                 return false;
        } else {
@@ -165,8 +165,8 @@ math: false
         </div>
       </div>
     </div>
-    </div>
-    </div>
+    <!-- </div>
+    </div> -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

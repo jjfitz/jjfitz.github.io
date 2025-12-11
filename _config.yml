@@ -228,3 +228,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# Getting the site up and running: on codespaces
+# bundle exec jekyll serve

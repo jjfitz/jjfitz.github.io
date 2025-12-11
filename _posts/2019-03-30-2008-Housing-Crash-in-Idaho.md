@@ -11,13 +11,13 @@ math: true
 
 
 
-<h1 class="title toc-ignore">Case_Study10</h1>
+<h1 class="title toc-ignore">Building the Past</h1>
 
-</div>
+<!-- </div> -->
 
 
 <div id="case-study-10-building-the-past" class="section level2">
-<h2>Case Study 10: Building the past</h2>
+<h2>Case Study 10: Building the Past</h2>
 <p>shiny link - <a href="https://shiny.byui.edu/content/126/Case_Study10.html?rscembedded=true&amp;url=https%3A%2F%2Fshiny.byui.edu%2Fconnect%2F%23%2Fapps%2F126%2Faccess">https://shiny.byui.edu/content/126/Case_Study10.html?rscembedded=true&amp;url=https%3A%2F%2Fshiny.byui.edu%2Fconnect%2F%23%2Fapps%2F126%2Faccess</a></p>
 <p>In this case study we will be looking at the housing collapse that occurred around 2005, and how it has effected Single Family permits. We will look at how this has effected the nation, and specifically Idaho.</p>
 <pre class="r"><code>US_data %&gt;%
@@ -84,7 +84,7 @@ idc %&gt;%
 
 
 
-</div>
+<!-- </div> -->
 
 <script>
 
